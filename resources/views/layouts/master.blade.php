@@ -28,7 +28,7 @@
     <!-- jQuery -->
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <!-- Bootstrap Core JavaScript -->
-    3
+
     <script src="{{asset('js/bootstrap.min.js')}}"></script>
     <!-- Contact Form JavaScript -->
     <script src="{{asset('js/jqBootstrapValidation.js')}}"></script>
