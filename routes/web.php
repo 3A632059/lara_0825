@@ -20,10 +20,14 @@ Route::get('/', function () {
     ]);*/
 
     //練習2-5
-    $post=new\App\Post();
-    $post->title='testtitle';
-    $post->content='testcontent';
-    $post->save();
+    /*$post=new\App\Post();
+           $post->title='testtitle';
+           $post->content='testcontent';
+           $post->save();*/
+
+    //練習3-2
+    $posts=\App\Post::all();
+    dd($posts);
 
     return view('welcome');
 });
