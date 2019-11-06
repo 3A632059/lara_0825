@@ -34,8 +34,16 @@ Route::get('/', function () {
     dd($post);*/
 
     //練習3-4
-    $posts=\App\Post::where('id','<',10)->orderBy('id','DESC')->get();
-dd($posts);
+    /*$posts=\App\Post::where('id','<',10)->orderBy('id','DESC')->get();
+dd($posts);*/
+
+    //練習4-1
+    $post=\App\Post::find(1);
+    $post->update([
+        'title'=>'updatedtitle',
+        'content'=>'updatedcontent',
+    ]);
+
 
     return view('welcome');
 });
