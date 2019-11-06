@@ -45,10 +45,14 @@ dd($posts);*/
     ]);*/
 
     //練習4-3
-    $post=\App\Post::find(2);
+    /*$post=\App\Post::find(2);
     $post->title='savedtitle';
     $post->content='savedcontent';
-    $post->save();
+    $post->save();*/
+
+    //練習5-1
+    $post=\App\Post::find(1);
+    $post->delete();
 
 
 
