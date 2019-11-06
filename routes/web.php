@@ -30,8 +30,12 @@ Route::get('/', function () {
     dd($posts);*/
 
     //練習3-3
-    $post=\App\Post::find(1);
-    dd($post);
+    /*$post=\App\Post::find(1);
+    dd($post);*/
+
+    //練習3-4
+    $posts=\App\Post::where('id','<',10)->orderBy('id','DESC')->get();
+dd($posts);
 
     return view('welcome');
 });
