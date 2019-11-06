@@ -51,8 +51,11 @@ dd($posts);*/
     $post->save();*/
 
     //練習5-1
-    $post=\App\Post::find(1);
-    $post->delete();
+    /*$post=\App\Post::find(1);
+    $post->delete();*/
+
+    //練習5-3
+    \App\Post::destroy(2);
 
 
 
