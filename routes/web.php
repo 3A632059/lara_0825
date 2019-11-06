@@ -26,8 +26,12 @@ Route::get('/', function () {
            $post->save();*/
 
     //練習3-2
-    $posts=\App\Post::all();
-    dd($posts);
+    /*$posts=\App\Post::all();
+    dd($posts);*/
+
+    //練習3-3
+    $post=\App\Post::find(1);
+    dd($post);
 
     return view('welcome');
 });
