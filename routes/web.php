@@ -12,11 +12,18 @@
 */
 
 Route::get('/', function () {
+
     //練習2-2
-    \App\Post::create([
+    /*\App\Post::create([
         'title'=>'testtitle',
         'content'=>'testcontent',
-    ]);
+    ]);*/
+
+    //練習2-5
+    $post=new\App\Post();
+    $post->title='testtitle';
+    $post->content='testcontent';
+    $post->save();
 
     return view('welcome');
 });
