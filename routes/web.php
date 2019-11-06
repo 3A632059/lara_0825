@@ -38,11 +38,18 @@ Route::get('/', function () {
 dd($posts);*/
 
     //練習4-1
-    $post=\App\Post::find(1);
+    /*$post=\App\Post::find(1);
     $post->update([
         'title'=>'updatedtitle',
         'content'=>'updatedcontent',
-    ]);
+    ]);*/
+
+    //練習4-3
+    $post=\App\Post::find(2);
+    $post->title='savedtitle';
+    $post->content='savedcontent';
+    $post->save();
+
 
 
     return view('welcome');
