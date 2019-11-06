@@ -55,7 +55,10 @@ dd($posts);*/
     $post->delete();*/
 
     //練習5-3
-    \App\Post::destroy(2);
+    //\App\Post::destroy(2);
+
+    //練習5-5
+    \App\Post::destroy(3,5,7);
 
 
 
