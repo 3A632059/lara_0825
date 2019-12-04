@@ -60,6 +60,9 @@ dd($posts);*/
     //練習5-5
     \App\Post::destroy(3,5,7);
 
+    //練習6-1-1.2
+    $allPosts=\App\Post::all();
+    dd($allPosts);
 
 
     return view('welcome');
