@@ -69,8 +69,13 @@ dd($posts);*/
     dd($featuredPosts);*/
 
     //練習6-2-1.2
-    $fourthPost=\App\Post::find(4);
-    dd($fourthPost);
+    /*$fourthPost=\App\Post::find(4);
+    dd($fourthPost);*/
+
+    //練習6-2-3.4
+    $lastPost=\App\Post::orderBy('id','DESC')->first();
+    dd($lastPost);
+
 
 
     //return view('welcome');
