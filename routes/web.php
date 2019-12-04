@@ -77,10 +77,17 @@ dd($posts);*/
     dd($lastPost);*/
 
     //練習7-1 b, d, f
-    $comment = new\App\Comment();
+    /*$comment = new\App\Comment();
     $comment->content = 'testcontent';
     $comment->post_id = '4';
-    $comment->save();
+    $comment->save();*/
+
+    //練習7-4
+    $post=\App\Post::find(1);
+    foreach($post->comments as $comment){
+        echo $comment->content.'<br>';
+    }
+
 
 
 
