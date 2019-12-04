@@ -61,8 +61,12 @@ dd($posts);*/
     /*\App\Post::destroy(3,5,7);*/
 
     //練習6-1-1.2
-    $allPosts=\App\Post::all();
-     dd($allPosts);
+    /*$allPosts=\App\Post::all();
+     dd($allPosts);*/
+
+    //練習6-1-3.4
+    $featuredPosts=\App\Post::where('is_feature',1)->get();
+    dd($featuredPosts);
 
 
     //return view('welcome');
